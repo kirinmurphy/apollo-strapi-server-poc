@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_venue_metadata_locations",
+  "info": {
+    "name": "location",
+    "icon": "globe-asia"
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "neighborhood": {
+      "type": "string"
+    }
+  }
+}

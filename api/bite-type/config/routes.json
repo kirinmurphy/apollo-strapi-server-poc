@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bite-types",
+      "handler": "bite-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bite-types/count",
+      "handler": "bite-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bite-types/:id",
+      "handler": "bite-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bite-types",
+      "handler": "bite-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bite-types/:id",
+      "handler": "bite-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bite-types/:id",
+      "handler": "bite-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sources",
+  "info": {
+    "name": "source"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "venue-metadata.location"
+    },
+    "bites": {
+      "via": "source",
+      "collection": "bite"
+    }
+  }
+}

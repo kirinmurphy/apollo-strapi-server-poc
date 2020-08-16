@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bites",
+  "info": {
+    "name": "bite"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "bite_types": {
+      "collection": "bite-type",
+      "via": "bites",
+      "dominant": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "source": {
+      "model": "source",
+      "via": "bites"
+    }
+  }
+}
