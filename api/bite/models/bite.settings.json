@@ -9,11 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "bite_types": {
-      "via": "bites",
-      "collection": "bite-type",
-      "dominant": true
-    },
     "photo": {
       "model": "file",
       "via": "related",
@@ -31,8 +26,8 @@
       "via": "bites"
     },
     "cuisines": {
-      "via": "bites",
       "collection": "cuisine",
+      "via": "bites",
       "dominant": true
     }
   }

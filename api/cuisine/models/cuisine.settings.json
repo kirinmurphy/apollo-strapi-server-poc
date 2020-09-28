@@ -10,8 +10,8 @@
   },
   "attributes": {
     "bites": {
-      "collection": "bite",
-      "via": "cuisines"
+      "via": "cuisines",
+      "collection": "bite"
     },
     "name": {
       "type": "string"
