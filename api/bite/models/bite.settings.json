@@ -10,8 +10,8 @@
   },
   "attributes": {
     "bite_types": {
-      "collection": "bite-type",
       "via": "bites",
+      "collection": "bite-type",
       "dominant": true
     },
     "photo": {
@@ -29,6 +29,11 @@
     "source": {
       "model": "source",
       "via": "bites"
+    },
+    "cuisines": {
+      "via": "bites",
+      "collection": "cuisine",
+      "dominant": true
     }
   }
 }
