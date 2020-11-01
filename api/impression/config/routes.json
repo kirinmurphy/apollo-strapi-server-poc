@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/impressions/me",
+      "handler": "impression.me",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/impressions/:id",
       "handler": "impression.findOne",
       "config": {
