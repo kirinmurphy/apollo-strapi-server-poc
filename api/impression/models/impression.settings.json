@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "impressions",
+  "info": {
+    "name": "Impression"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "bite": {
+      "model": "bite"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "favorite",
+        "interested",
+        "pass",
+        "never"
+      ]
+    }
+  }
+}
