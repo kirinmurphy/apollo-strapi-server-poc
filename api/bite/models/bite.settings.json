@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "bites",
   "info": {
-    "name": "bite"
+    "name": "bite",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "photo": {
@@ -29,6 +31,9 @@
       "collection": "cuisine",
       "via": "bites",
       "dominant": true
+    },
+    "mealPreferences": {
+      "type": "text"
     }
   }
 }

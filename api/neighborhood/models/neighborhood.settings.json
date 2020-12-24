@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "neighborhoods",
+  "info": {
+    "name": "Neighborhood",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "city": {
+      "unique": true,
+      "model": "city"
+    }
+  }
+}

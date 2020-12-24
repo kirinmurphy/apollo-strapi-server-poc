@@ -2,24 +2,27 @@
   "kind": "collectionType",
   "collectionName": "sources",
   "info": {
-    "name": "source"
+    "name": "source",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
       "type": "string"
     },
-    "location": {
-      "type": "component",
-      "repeatable": false,
-      "component": "venue-metadata.location"
-    },
     "bites": {
       "via": "source",
       "collection": "bite"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "venue-metadata.location",
+      "required": true
     }
   }
 }
