@@ -24,8 +24,8 @@
       "type": "string"
     },
     "source": {
-      "model": "source",
-      "via": "bites"
+      "via": "bites",
+      "model": "source"
     },
     "cuisines": {
       "collection": "cuisine",

@@ -15,14 +15,26 @@
       "type": "string"
     },
     "bites": {
-      "via": "source",
-      "collection": "bite"
+      "collection": "bite",
+      "via": "source"
     },
     "location": {
       "type": "component",
       "repeatable": false,
       "component": "venue-metadata.location",
       "required": true
+    },
+    "cuisines": {
+      "collection": "cuisine"
+    },
+    "marqueeImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
