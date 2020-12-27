@@ -40,6 +40,11 @@
       "type": "component",
       "repeatable": false,
       "component": "venue-metadata.contact-info"
+    },
+    "deliveryOptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "venue-metadata.delivery-options"
     }
   }
 }
