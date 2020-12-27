@@ -16,6 +16,12 @@
     "neighborhood": {
       "unique": true,
       "model": "neighborhood"
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 10,
+      "minLength": 10,
+      "required": true
     }
   }
 }

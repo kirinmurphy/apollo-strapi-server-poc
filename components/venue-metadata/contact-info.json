@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_venue_metadata_contact_infos",
+  "info": {
+    "name": "ContactLinks",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "website": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    }
+  }
+}
