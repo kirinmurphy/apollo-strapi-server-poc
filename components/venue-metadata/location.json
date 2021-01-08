@@ -14,7 +14,6 @@
       "type": "float"
     },
     "neighborhood": {
-      "unique": true,
       "model": "neighborhood"
     },
     "phone": {

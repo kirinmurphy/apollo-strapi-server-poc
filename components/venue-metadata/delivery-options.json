@@ -2,7 +2,8 @@
   "collectionName": "components_venue_metadata_delivery_options",
   "info": {
     "name": "DeliveryOptions",
-    "icon": "car-side"
+    "icon": "car-side",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -18,7 +19,7 @@
         "website",
         "uberEats",
         "grubHub",
-        "other"
+        "otherLink"
       ]
     },
     "otherLink": {
