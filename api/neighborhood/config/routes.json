@@ -3,6 +3,14 @@
     {
       "method": "GET",
       "path": "/neighborhoods",
+      "handler": "neighborhood.fff",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/neighborhoods/fff",
       "handler": "neighborhood.find",
       "config": {
         "policies": []

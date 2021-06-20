@@ -9,9 +9,11 @@ module.exports = {
   async me(ctx) {
     const user = ctx.state.user;    
     // console.log('ctx user', user);
-    console.log('ctx state', ctx.state);
+    // console.log('ctx state', ctx.state);
     // console.log('ctx q', ctx.query);
 
+
+    strapi.log.debug('test', 'fhseef');
     if (!user) {
       return ctx.badRequest(null, [
         { messages: [{ id: 'No authorization header was found' }] }

@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/impressions",
-      "handler": "impression.find",
+      "handler": "impression.me",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/impressions/me",
-      "handler": "impression.me",
+      "handler": "impression.find",
       "config": {
         "policies": []
       }
