@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dev-survey-results",
+      "handler": "dev-survey-results.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dev-survey-results/count",
+      "handler": "dev-survey-results.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dev-survey-results/:id",
+      "handler": "dev-survey-results.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dev-survey-results",
+      "handler": "dev-survey-results.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dev-survey-results/:id",
+      "handler": "dev-survey-results.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dev-survey-results/:id",
+      "handler": "dev-survey-results.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

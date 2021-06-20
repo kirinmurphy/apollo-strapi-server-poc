@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_survey_results",
+  "info": {
+    "name": "dev_survey_results"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "results": {
+      "type": "json"
+    }
+  }
+}
