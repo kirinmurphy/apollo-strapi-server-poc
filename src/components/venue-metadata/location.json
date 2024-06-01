@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_venue_metadata_locations",
+  "info": {
+    "displayName": "location"
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "float",
+      "required": true
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "neighborhood": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::neighborhood.neighborhood"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

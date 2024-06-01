@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_venue_metadata_delivery_options",
+  "info": {
+    "displayName": "Delivery Options",
+    "icon": "car",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "available": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "preferredMethod": {
+      "type": "enumeration",
+      "enum": [
+        "call",
+        "website",
+        "uberEats",
+        "grubHub",
+        "otherLink"
+      ]
+    },
+    "otherLink": {
+      "type": "string"
+    }
+  }
+}

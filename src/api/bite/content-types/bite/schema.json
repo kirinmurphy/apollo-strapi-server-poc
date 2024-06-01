@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bites",
+  "info": {
+    "singularName": "bite",
+    "pluralName": "bites",
+    "displayName": "Bite",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "cuisines": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cuisine.cuisine",
+      "mappedBy": "bites"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "source": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::source.source",
+      "inversedBy": "bites"
+    }
+  }
+}

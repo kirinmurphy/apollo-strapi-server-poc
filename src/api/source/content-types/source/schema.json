@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sources",
+  "info": {
+    "singularName": "source",
+    "pluralName": "sources",
+    "displayName": "Source",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "venue-metadata.location",
+      "required": true
+    },
+    "cuisines": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cuisine.cuisine",
+      "inversedBy": "sources"
+    },
+    "marqueeImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "deliveryOptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "venue-metadata.delivery-options"
+    },
+    "contactLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "venue-metadata.contact-links"
+    },
+    "bites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bite.bite",
+      "mappedBy": "source"
+    }
+  }
+}

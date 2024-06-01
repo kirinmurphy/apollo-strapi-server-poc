@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_venue_metadata_contact_links",
+  "info": {
+    "displayName": "contactLinks",
+    "icon": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "website": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    }
+  }
+}

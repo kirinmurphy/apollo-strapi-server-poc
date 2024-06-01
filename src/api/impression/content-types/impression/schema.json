@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "impressions",
+  "info": {
+    "singularName": "impression",
+    "pluralName": "impressions",
+    "displayName": "Impression",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "bite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bite.bite"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "favorite",
+        "interested",
+        "pass",
+        "never"
+      ],
+      "required": true
+    }
+  }
+}
